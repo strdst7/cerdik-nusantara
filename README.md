@@ -55,12 +55,11 @@ npm run preview   # preview the production build locally
 
 ## Deployment
 
-This repo deploys automatically to **GitHub Pages** via GitHub Actions (`.github/workflows/deploy.yml`): every push to `main` builds the app in `lazy-learner-github-101/` and publishes `dist/`.
+**Live:** [cerdik-nusantara.vercel.app](https://cerdik-nusantara.vercel.app/)
 
-- Live site: `https://strdst7.github.io/cerdik-nusantara/`
-- Make sure **Settings → Pages → Build and deployment → Source** is set to **GitHub Actions**.
+Deployed on [Vercel](https://vercel.com/), with **Root Directory** set to `lazy-learner-github-101` (Vercel auto-detects the Vite build). Every push to `main` auto-redeploys.
 
-It can also be deployed on [Vercel](https://vercel.com/new) — import the repo and set **Root Directory** to `lazy-learner-github-101`; Vercel auto-detects the Vite build.
+The repo also includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) to build and publish to **GitHub Pages** as an alternative — every push to `main` builds the app and publishes `dist/`. To use it, set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**.
 
 ## License
 
